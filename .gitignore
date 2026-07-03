@@ -1,0 +1,2 @@
+node_modules
+data/*.json  # ถ้าอยากกันไม่ให้ขึ้น git (optional)

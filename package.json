@@ -1,0 +1,13 @@
+{
+  "name": "srinakhon-games",
+  "version": "1.0.0",
+  "description": "เว็บอัปเดตผลการแข่งขันกีฬาศรีนครเกมส์ ครั้งที่ 30",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "seed": "node seed.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

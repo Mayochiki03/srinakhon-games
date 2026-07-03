@@ -1,0 +1,1515 @@
+{
+  "teams": {
+    "green": {
+      "name": "สีเขียว",
+      "color": "#22C55E"
+    },
+    "blue": {
+      "name": "สีน้ำเงิน",
+      "color": "#3B82F6"
+    },
+    "pink": {
+      "name": "สีชมพู",
+      "color": "#EC4899"
+    },
+    "red": {
+      "name": "สีแดง",
+      "color": "#EF4444"
+    }
+  },
+  "sports": {
+    "badminton_m": {
+      "label": "แบดมินตัน ชาย มัธยมปลาย",
+      "icon": "🏸",
+      "venue": "หอประชุม"
+    },
+    "badminton_w": {
+      "label": "แบดมินตัน หญิง มัธยมปลาย",
+      "icon": "🏸",
+      "venue": "หอประชุม"
+    },
+    "sharball": {
+      "label": "แชร์บอล หญิง ประถม 4-6",
+      "icon": "🤾",
+      "venue": "ลานอเนกประสงค์"
+    },
+    "futsal": {
+      "label": "ฟุตซอล ชาย มัธยมปลาย",
+      "icon": "⚽",
+      "venue": "สนามฟุตซอล"
+    },
+    "football_prathom": {
+      "label": "ฟุตบอล ประถม 4-6",
+      "icon": "⚽",
+      "venue": "สนามฟุตบอล"
+    },
+    "football_matthayom": {
+      "label": "ฟุตบอล มัธยมต้น",
+      "icon": "⚽",
+      "venue": "สนามฟุตบอล"
+    },
+    "volleyball": {
+      "label": "วอลเลย์บอลผสม มัธยมปลาย",
+      "icon": "🏐",
+      "venue": "สนามวอลเลย์บอล"
+    },
+    "basketball": {
+      "label": "บาสเกตบอล",
+      "icon": "🏀",
+      "venue": "สนามบาสเกตบอล"
+    },
+    "coverdance": {
+      "label": "Coverdance",
+      "icon": "💃",
+      "venue": "หอประชุม"
+    },
+    "esport": {
+      "label": "E-SPORT",
+      "icon": "🎮",
+      "venue": "หอประชุม"
+    },
+    "folkgame_prathom": {
+      "label": "กีฬาพื้นบ้าน ช่วงชั้น 1 (ป.1-3)",
+      "icon": "🎯",
+      "venue": "สนามฟุตบอล"
+    },
+    "folkgame_matthayom": {
+      "label": "กีฬาพื้นบ้าน ช่วงชั้น 3 (ม.1-3)",
+      "icon": "🎯",
+      "venue": "สนามฟุตบอล"
+    },
+    "opening": {
+      "label": "พิธีเปิด + กรีฑา + ผู้นำเชียร์",
+      "icon": "🏅",
+      "venue": "สนามฟุตบอล"
+    }
+  },
+  "matches": [
+    {
+      "id": "m001",
+      "type": "match",
+      "sport": "sharball",
+      "date": "2026-07-08",
+      "time": "15:10",
+      "durationMin": 30,
+      "round": "คู่ 1",
+      "team1": {
+        "name": "สีเขียว",
+        "color": "#22C55E"
+      },
+      "team2": {
+        "name": "สีน้ำเงิน",
+        "color": "#3B82F6"
+      },
+      "score1": null,
+      "score2": null,
+      "winner": null,
+      "status": "scheduled",
+      "statusOverride": null,
+      "referee": "ครูวัลลำ",
+      "note": null
+    },
+    {
+      "id": "m002",
+      "type": "match",
+      "sport": "sharball",
+      "date": "2026-07-08",
+      "time": "15:10",
+      "durationMin": 30,
+      "round": "คู่ 2",
+      "team1": {
+        "name": "สีชมพู",
+        "color": "#EC4899"
+      },
+      "team2": {
+        "name": "สีแดง",
+        "color": "#EF4444"
+      },
+      "score1": null,
+      "score2": null,
+      "winner": null,
+      "status": "scheduled",
+      "statusOverride": null,
+      "referee": "ครูปรเมษฐ์",
+      "note": null
+    },
+    {
+      "id": "m003",
+      "type": "match",
+      "sport": "sharball",
+      "date": "2026-07-09",
+      "time": "15:10",
+      "durationMin": 30,
+      "round": "คู่ 3",
+      "team1": {
+        "name": "สีเขียว",
+        "color": "#22C55E"
+      },
+      "team2": {
+        "name": "สีแดง",
+        "color": "#EF4444"
+      },
+      "score1": null,
+      "score2": null,
+      "winner": null,
+      "status": "scheduled",
+      "statusOverride": null,
+      "referee": "ครูวัลลำ",
+      "note": null
+    },
+    {
+      "id": "m004",
+      "type": "match",
+      "sport": "sharball",
+      "date": "2026-07-09",
+      "time": "15:10",
+      "durationMin": 30,
+      "round": "คู่ 1",
+      "team1": {
+        "name": "สีชมพู",
+        "color": "#EC4899"
+      },
+      "team2": {
+        "name": "สีน้ำเงิน",
+        "color": "#3B82F6"
+      },
+      "score1": null,
+      "score2": null,
+      "winner": null,
+      "status": "scheduled",
+      "statusOverride": null,
+      "referee": "ครูปรเมษฐ์",
+      "note": null
+    },
+    {
+      "id": "m005",
+      "type": "match",
+      "sport": "sharball",
+      "date": "2026-07-10",
+      "time": "15:10",
+      "durationMin": 30,
+      "round": "คู่ 2",
+      "team1": {
+        "name": "สีแดง",
+        "color": "#EF4444"
+      },
+      "team2": {
+        "name": "สีน้ำเงิน",
+        "color": "#3B82F6"
+      },
+      "score1": null,
+      "score2": null,
+      "winner": null,
+      "status": "scheduled",
+      "statusOverride": null,
+      "referee": "ครูวัลลำ",
+      "note": null
+    },
+    {
+      "id": "m006",
+      "type": "match",
+      "sport": "sharball",
+      "date": "2026-07-10",
+      "time": "15:10",
+      "durationMin": 30,
+      "round": "คู่ 3",
+      "team1": {
+        "name": "สีเขียว",
+        "color": "#22C55E"
+      },
+      "team2": {
+        "name": "สีชมพู",
+        "color": "#EC4899"
+      },
+      "score1": null,
+      "score2": null,
+      "winner": null,
+      "status": "scheduled",
+      "statusOverride": null,
+      "referee": "ครูปรเมษฐ์",
+      "note": null
+    },
+    {
+      "id": "m007",
+      "type": "event",
+      "sport": "folkgame_prathom",
+      "date": "2026-07-14",
+      "time": "15:10",
+      "durationMin": 45,
+      "title": "โยนบอลลงตะกร้า",
+      "status": "scheduled",
+      "statusOverride": null,
+      "referee": "ครูอนิรุต์",
+      "note": null
+    },
+    {
+      "id": "m008",
+      "type": "event",
+      "sport": "folkgame_prathom",
+      "date": "2026-07-14",
+      "time": "15:10",
+      "durationMin": 45,
+      "title": "วิ่งผลัดลูกบอล",
+      "status": "scheduled",
+      "statusOverride": null,
+      "referee": "ครูวิมล",
+      "note": null
+    },
+    {
+      "id": "m009",
+      "type": "event",
+      "sport": "folkgame_prathom",
+      "date": "2026-07-14",
+      "time": "15:10",
+      "durationMin": 45,
+      "title": "วิ่ง 6 ขาสามัคคี",
+      "status": "scheduled",
+      "statusOverride": null,
+      "referee": "ครูสุวิทย์",
+      "note": null
+    },
+    {
+      "id": "m010",
+      "type": "event",
+      "sport": "folkgame_matthayom",
+      "date": "2026-07-14",
+      "time": "15:10",
+      "durationMin": 45,
+      "title": "เอ็กซ์-โอ",
+      "status": "scheduled",
+      "statusOverride": null,
+      "referee": "ครูอนิรุต์",
+      "note": null
+    },
+    {
+      "id": "m011",
+      "type": "event",
+      "sport": "folkgame_matthayom",
+      "date": "2026-07-14",
+      "time": "15:10",
+      "durationMin": 45,
+      "title": "ส่งความห่วงใย",
+      "status": "scheduled",
+      "statusOverride": null,
+      "referee": "ครูวิมล",
+      "note": null
+    },
+    {
+      "id": "m012",
+      "type": "event",
+      "sport": "folkgame_matthayom",
+      "date": "2026-07-14",
+      "time": "15:10",
+      "durationMin": 45,
+      "title": "ตีกอล์ฟคนจน",
+      "status": "scheduled",
+      "statusOverride": null,
+      "referee": "ครูสุวิทย์",
+      "note": null
+    },
+    {
+      "id": "m013",
+      "type": "event",
+      "sport": "coverdance",
+      "date": "2026-07-09",
+      "time": "15:10",
+      "durationMin": 45,
+      "title": "Coverdance รอบแรก",
+      "status": "scheduled",
+      "statusOverride": null,
+      "referee": null,
+      "note": "ณ หอประชุม"
+    },
+    {
+      "id": "m014",
+      "type": "event",
+      "sport": "coverdance",
+      "date": "2026-07-22",
+      "time": "15:10",
+      "durationMin": 45,
+      "title": "Coverdance รอบสอง",
+      "status": "scheduled",
+      "statusOverride": null,
+      "referee": null,
+      "note": "ณ สนามฟุตบอล (หลังซ้อมพิธีเปิด)"
+    },
+    {
+      "id": "m015",
+      "type": "event",
+      "sport": "esport",
+      "date": "2026-07-10",
+      "time": "15:10",
+      "durationMin": 45,
+      "title": "การแข่งขัน E-SPORT",
+      "status": "scheduled",
+      "statusOverride": null,
+      "referee": null,
+      "note": "ณ หอประชุม"
+    },
+    {
+      "id": "m016",
+      "type": "match",
+      "sport": "football_prathom",
+      "date": "2026-07-14",
+      "time": "15:10",
+      "durationMin": 30,
+      "round": "คู่ 1",
+      "team1": {
+        "name": "สีเขียว",
+        "color": "#22C55E"
+      },
+      "team2": {
+        "name": "สีแดง",
+        "color": "#EF4444"
+      },
+      "score1": null,
+      "score2": null,
+      "winner": null,
+      "status": "scheduled",
+      "statusOverride": null,
+      "referee": "ครูสมชาย",
+      "note": null
+    },
+    {
+      "id": "m017",
+      "type": "match",
+      "sport": "football_prathom",
+      "date": "2026-07-14",
+      "time": "15:10",
+      "durationMin": 30,
+      "round": "คู่ 2",
+      "team1": {
+        "name": "สีชมพู",
+        "color": "#EC4899"
+      },
+      "team2": {
+        "name": "สีน้ำเงิน",
+        "color": "#3B82F6"
+      },
+      "score1": null,
+      "score2": null,
+      "winner": null,
+      "status": "scheduled",
+      "statusOverride": null,
+      "referee": "ครูนาวี",
+      "note": null
+    },
+    {
+      "id": "m018",
+      "type": "match",
+      "sport": "football_prathom",
+      "date": "2026-07-15",
+      "time": "15:10",
+      "durationMin": 30,
+      "round": "คู่ 1",
+      "team1": {
+        "name": "สีแดง",
+        "color": "#EF4444"
+      },
+      "team2": {
+        "name": "สีน้ำเงิน",
+        "color": "#3B82F6"
+      },
+      "score1": null,
+      "score2": null,
+      "winner": null,
+      "status": "scheduled",
+      "statusOverride": null,
+      "referee": "ครูสมชาย",
+      "note": null
+    },
+    {
+      "id": "m019",
+      "type": "match",
+      "sport": "football_prathom",
+      "date": "2026-07-16",
+      "time": "15:10",
+      "durationMin": 30,
+      "round": "คู่ 1",
+      "team1": {
+        "name": "สีชมพู",
+        "color": "#EC4899"
+      },
+      "team2": {
+        "name": "สีแดง",
+        "color": "#EF4444"
+      },
+      "score1": null,
+      "score2": null,
+      "winner": null,
+      "status": "scheduled",
+      "statusOverride": null,
+      "referee": "ครูนาวี",
+      "note": null
+    },
+    {
+      "id": "m020",
+      "type": "match",
+      "sport": "football_prathom",
+      "date": "2026-07-16",
+      "time": "15:10",
+      "durationMin": 30,
+      "round": "คู่ 2",
+      "team1": {
+        "name": "สีเขียว",
+        "color": "#22C55E"
+      },
+      "team2": {
+        "name": "สีน้ำเงิน",
+        "color": "#3B82F6"
+      },
+      "score1": null,
+      "score2": null,
+      "winner": null,
+      "status": "scheduled",
+      "statusOverride": null,
+      "referee": "ครูสมชาย",
+      "note": null
+    },
+    {
+      "id": "m021",
+      "type": "match",
+      "sport": "football_prathom",
+      "date": "2026-07-17",
+      "time": "15:10",
+      "durationMin": 30,
+      "round": "คู่ 1",
+      "team1": {
+        "name": "สีเขียว",
+        "color": "#22C55E"
+      },
+      "team2": {
+        "name": "สีชมพู",
+        "color": "#EC4899"
+      },
+      "score1": null,
+      "score2": null,
+      "winner": null,
+      "status": "scheduled",
+      "statusOverride": null,
+      "referee": "ครูนาวี",
+      "note": null
+    },
+    {
+      "id": "m022",
+      "type": "match",
+      "sport": "football_matthayom",
+      "date": "2026-07-14",
+      "time": "15:10",
+      "durationMin": 30,
+      "round": "คู่ 3",
+      "team1": {
+        "name": "สีชมพู",
+        "color": "#EC4899"
+      },
+      "team2": {
+        "name": "สีแดง",
+        "color": "#EF4444"
+      },
+      "score1": null,
+      "score2": null,
+      "winner": null,
+      "status": "scheduled",
+      "statusOverride": null,
+      "referee": "ครูสมชาย",
+      "note": null
+    },
+    {
+      "id": "m023",
+      "type": "match",
+      "sport": "football_matthayom",
+      "date": "2026-07-15",
+      "time": "15:10",
+      "durationMin": 30,
+      "round": "คู่ 2",
+      "team1": {
+        "name": "สีเขียว",
+        "color": "#22C55E"
+      },
+      "team2": {
+        "name": "สีชมพู",
+        "color": "#EC4899"
+      },
+      "score1": null,
+      "score2": null,
+      "winner": null,
+      "status": "scheduled",
+      "statusOverride": null,
+      "referee": "ครูนาวี",
+      "note": null
+    },
+    {
+      "id": "m024",
+      "type": "match",
+      "sport": "football_matthayom",
+      "date": "2026-07-15",
+      "time": "15:10",
+      "durationMin": 30,
+      "round": "คู่ 3",
+      "team1": {
+        "name": "สีแดง",
+        "color": "#EF4444"
+      },
+      "team2": {
+        "name": "สีน้ำเงิน",
+        "color": "#3B82F6"
+      },
+      "score1": null,
+      "score2": null,
+      "winner": null,
+      "status": "scheduled",
+      "statusOverride": null,
+      "referee": "ครูสมชาย",
+      "note": null
+    },
+    {
+      "id": "m025",
+      "type": "match",
+      "sport": "football_matthayom",
+      "date": "2026-07-16",
+      "time": "15:10",
+      "durationMin": 30,
+      "round": "คู่ 3",
+      "team1": {
+        "name": "สีเขียว",
+        "color": "#22C55E"
+      },
+      "team2": {
+        "name": "สีน้ำเงิน",
+        "color": "#3B82F6"
+      },
+      "score1": null,
+      "score2": null,
+      "winner": null,
+      "status": "scheduled",
+      "statusOverride": null,
+      "referee": "ครูนาวี",
+      "note": null
+    },
+    {
+      "id": "m026",
+      "type": "match",
+      "sport": "football_matthayom",
+      "date": "2026-07-17",
+      "time": "15:10",
+      "durationMin": 30,
+      "round": "คู่ 2",
+      "team1": {
+        "name": "สีเขียว",
+        "color": "#22C55E"
+      },
+      "team2": {
+        "name": "สีแดง",
+        "color": "#EF4444"
+      },
+      "score1": null,
+      "score2": null,
+      "winner": null,
+      "status": "scheduled",
+      "statusOverride": null,
+      "referee": "ครูสมชาย",
+      "note": null
+    },
+    {
+      "id": "m027",
+      "type": "match",
+      "sport": "football_matthayom",
+      "date": "2026-07-17",
+      "time": "15:10",
+      "durationMin": 30,
+      "round": "คู่ 3",
+      "team1": {
+        "name": "สีชมพู",
+        "color": "#EC4899"
+      },
+      "team2": {
+        "name": "สีน้ำเงิน",
+        "color": "#3B82F6"
+      },
+      "score1": null,
+      "score2": null,
+      "winner": null,
+      "status": "scheduled",
+      "statusOverride": null,
+      "referee": "ครูนาวี",
+      "note": null
+    },
+    {
+      "id": "m028",
+      "type": "match",
+      "sport": "basketball",
+      "date": "2026-07-20",
+      "time": "15:10",
+      "durationMin": 30,
+      "round": "คู่ 1 · ชาย",
+      "team1": {
+        "name": "สีแดง",
+        "color": "#EF4444"
+      },
+      "team2": {
+        "name": "สีน้ำเงิน",
+        "color": "#3B82F6"
+      },
+      "score1": null,
+      "score2": null,
+      "winner": null,
+      "status": "scheduled",
+      "statusOverride": null,
+      "referee": "ครูสุวิทย์",
+      "note": null
+    },
+    {
+      "id": "m029",
+      "type": "match",
+      "sport": "basketball",
+      "date": "2026-07-20",
+      "time": "15:10",
+      "durationMin": 30,
+      "round": "คู่ 2 · หญิง",
+      "team1": {
+        "name": "สีเขียว",
+        "color": "#22C55E"
+      },
+      "team2": {
+        "name": "สีชมพู",
+        "color": "#EC4899"
+      },
+      "score1": null,
+      "score2": null,
+      "winner": null,
+      "status": "scheduled",
+      "statusOverride": null,
+      "referee": "ครูไพโรจน์",
+      "note": null
+    },
+    {
+      "id": "m030",
+      "type": "match",
+      "sport": "basketball",
+      "date": "2026-07-20",
+      "time": "15:10",
+      "durationMin": 30,
+      "round": "คู่ 3 · ชาย",
+      "team1": {
+        "name": "สีเขียว",
+        "color": "#22C55E"
+      },
+      "team2": {
+        "name": "สีชมพู",
+        "color": "#EC4899"
+      },
+      "score1": null,
+      "score2": null,
+      "winner": null,
+      "status": "scheduled",
+      "statusOverride": null,
+      "referee": "ครูวิมล",
+      "note": null
+    },
+    {
+      "id": "m031",
+      "type": "match",
+      "sport": "basketball",
+      "date": "2026-07-20",
+      "time": "15:10",
+      "durationMin": 30,
+      "round": "คู่ 4 · หญิง",
+      "team1": {
+        "name": "สีแดง",
+        "color": "#EF4444"
+      },
+      "team2": {
+        "name": "สีน้ำเงิน",
+        "color": "#3B82F6"
+      },
+      "score1": null,
+      "score2": null,
+      "winner": null,
+      "status": "scheduled",
+      "statusOverride": null,
+      "referee": "ครูปรเมษฐ์",
+      "note": null
+    },
+    {
+      "id": "m032",
+      "type": "match",
+      "sport": "basketball",
+      "date": "2026-07-21",
+      "time": "15:10",
+      "durationMin": 30,
+      "round": "คู่ 5 · ชาย",
+      "team1": {
+        "name": "สีชมพู",
+        "color": "#EC4899"
+      },
+      "team2": {
+        "name": "สีน้ำเงิน",
+        "color": "#3B82F6"
+      },
+      "score1": null,
+      "score2": null,
+      "winner": null,
+      "status": "scheduled",
+      "statusOverride": null,
+      "referee": "ครูสุวิทย์",
+      "note": null
+    },
+    {
+      "id": "m033",
+      "type": "match",
+      "sport": "basketball",
+      "date": "2026-07-21",
+      "time": "15:10",
+      "durationMin": 30,
+      "round": "คู่ 6 · หญิง",
+      "team1": {
+        "name": "สีเขียว",
+        "color": "#22C55E"
+      },
+      "team2": {
+        "name": "สีแดง",
+        "color": "#EF4444"
+      },
+      "score1": null,
+      "score2": null,
+      "winner": null,
+      "status": "scheduled",
+      "statusOverride": null,
+      "referee": "ครูไพโรจน์",
+      "note": null
+    },
+    {
+      "id": "m034",
+      "type": "match",
+      "sport": "basketball",
+      "date": "2026-07-21",
+      "time": "15:10",
+      "durationMin": 30,
+      "round": "คู่ 7 · ชาย",
+      "team1": {
+        "name": "สีเขียว",
+        "color": "#22C55E"
+      },
+      "team2": {
+        "name": "สีแดง",
+        "color": "#EF4444"
+      },
+      "score1": null,
+      "score2": null,
+      "winner": null,
+      "status": "scheduled",
+      "statusOverride": null,
+      "referee": "ครูสุวิทย์",
+      "note": null
+    },
+    {
+      "id": "m035",
+      "type": "match",
+      "sport": "basketball",
+      "date": "2026-07-21",
+      "time": "15:10",
+      "durationMin": 30,
+      "round": "คู่ 8 · หญิง",
+      "team1": {
+        "name": "สีชมพู",
+        "color": "#EC4899"
+      },
+      "team2": {
+        "name": "สีน้ำเงิน",
+        "color": "#3B82F6"
+      },
+      "score1": null,
+      "score2": null,
+      "winner": null,
+      "status": "scheduled",
+      "statusOverride": null,
+      "referee": "ครูไพโรจน์",
+      "note": null
+    },
+    {
+      "id": "m036",
+      "type": "match",
+      "sport": "basketball",
+      "date": "2026-07-22",
+      "time": "15:10",
+      "durationMin": 30,
+      "round": "คู่ 9 · ชาย",
+      "team1": {
+        "name": "สีแดง",
+        "color": "#EF4444"
+      },
+      "team2": {
+        "name": "สีชมพู",
+        "color": "#EC4899"
+      },
+      "score1": null,
+      "score2": null,
+      "winner": null,
+      "status": "scheduled",
+      "statusOverride": null,
+      "referee": "ครูวิมล",
+      "note": null
+    },
+    {
+      "id": "m037",
+      "type": "match",
+      "sport": "basketball",
+      "date": "2026-07-22",
+      "time": "15:10",
+      "durationMin": 30,
+      "round": "คู่ 10 · หญิง",
+      "team1": {
+        "name": "สีเขียว",
+        "color": "#22C55E"
+      },
+      "team2": {
+        "name": "สีน้ำเงิน",
+        "color": "#3B82F6"
+      },
+      "score1": null,
+      "score2": null,
+      "winner": null,
+      "status": "scheduled",
+      "statusOverride": null,
+      "referee": "ครูปรเมษฐ์",
+      "note": null
+    },
+    {
+      "id": "m038",
+      "type": "match",
+      "sport": "basketball",
+      "date": "2026-07-22",
+      "time": "15:10",
+      "durationMin": 30,
+      "round": "คู่ 11 · ชาย",
+      "team1": {
+        "name": "สีเขียว",
+        "color": "#22C55E"
+      },
+      "team2": {
+        "name": "สีน้ำเงิน",
+        "color": "#3B82F6"
+      },
+      "score1": null,
+      "score2": null,
+      "winner": null,
+      "status": "scheduled",
+      "statusOverride": null,
+      "referee": "ครูสุวิทย์",
+      "note": null
+    },
+    {
+      "id": "m039",
+      "type": "match",
+      "sport": "basketball",
+      "date": "2026-07-22",
+      "time": "15:10",
+      "durationMin": 30,
+      "round": "คู่ 12 · หญิง",
+      "team1": {
+        "name": "สีแดง",
+        "color": "#EF4444"
+      },
+      "team2": {
+        "name": "สีชมพู",
+        "color": "#EC4899"
+      },
+      "score1": null,
+      "score2": null,
+      "winner": null,
+      "status": "scheduled",
+      "statusOverride": null,
+      "referee": "ครูไพโรจน์",
+      "note": null
+    },
+    {
+      "id": "m040",
+      "type": "match",
+      "sport": "futsal",
+      "date": "2026-07-09",
+      "time": "15:10",
+      "durationMin": 30,
+      "round": "คู่ 1",
+      "team1": {
+        "name": "สีเขียว",
+        "color": "#22C55E"
+      },
+      "team2": {
+        "name": "สีชมพู",
+        "color": "#EC4899"
+      },
+      "score1": null,
+      "score2": null,
+      "winner": null,
+      "status": "scheduled",
+      "statusOverride": null,
+      "referee": "ครูอนิรุต์",
+      "note": null
+    },
+    {
+      "id": "m041",
+      "type": "match",
+      "sport": "futsal",
+      "date": "2026-07-09",
+      "time": "15:10",
+      "durationMin": 30,
+      "round": "คู่ 2",
+      "team1": {
+        "name": "สีแดง",
+        "color": "#EF4444"
+      },
+      "team2": {
+        "name": "สีน้ำเงิน",
+        "color": "#3B82F6"
+      },
+      "score1": null,
+      "score2": null,
+      "winner": null,
+      "status": "scheduled",
+      "statusOverride": null,
+      "referee": "ครูธนากร",
+      "note": null
+    },
+    {
+      "id": "m042",
+      "type": "match",
+      "sport": "futsal",
+      "date": "2026-07-10",
+      "time": "15:10",
+      "durationMin": 30,
+      "round": "คู่ 3",
+      "team1": {
+        "name": "สีชมพู",
+        "color": "#EC4899"
+      },
+      "team2": {
+        "name": "สีน้ำเงิน",
+        "color": "#3B82F6"
+      },
+      "score1": null,
+      "score2": null,
+      "winner": null,
+      "status": "scheduled",
+      "statusOverride": null,
+      "referee": "ครูสุวิทย์",
+      "note": null
+    },
+    {
+      "id": "m043",
+      "type": "match",
+      "sport": "futsal",
+      "date": "2026-07-10",
+      "time": "15:10",
+      "durationMin": 30,
+      "round": "คู่ 1",
+      "team1": {
+        "name": "สีเขียว",
+        "color": "#22C55E"
+      },
+      "team2": {
+        "name": "สีแดง",
+        "color": "#EF4444"
+      },
+      "score1": null,
+      "score2": null,
+      "winner": null,
+      "status": "scheduled",
+      "statusOverride": null,
+      "referee": "ครูวิมล",
+      "note": null
+    },
+    {
+      "id": "m044",
+      "type": "match",
+      "sport": "futsal",
+      "date": "2026-07-13",
+      "time": "15:10",
+      "durationMin": 30,
+      "round": "คู่ 2",
+      "team1": {
+        "name": "สีแดง",
+        "color": "#EF4444"
+      },
+      "team2": {
+        "name": "สีชมพู",
+        "color": "#EC4899"
+      },
+      "score1": null,
+      "score2": null,
+      "winner": null,
+      "status": "scheduled",
+      "statusOverride": null,
+      "referee": "ครูสมชาย",
+      "note": null
+    },
+    {
+      "id": "m045",
+      "type": "match",
+      "sport": "futsal",
+      "date": "2026-07-13",
+      "time": "15:10",
+      "durationMin": 30,
+      "round": "คู่ 3",
+      "team1": {
+        "name": "สีเขียว",
+        "color": "#22C55E"
+      },
+      "team2": {
+        "name": "สีน้ำเงิน",
+        "color": "#3B82F6"
+      },
+      "score1": null,
+      "score2": null,
+      "winner": null,
+      "status": "scheduled",
+      "statusOverride": null,
+      "referee": "ครูนาวี",
+      "note": null
+    },
+    {
+      "id": "m046",
+      "type": "match",
+      "sport": "volleyball",
+      "date": "2026-07-14",
+      "time": "15:10",
+      "durationMin": 30,
+      "round": "คู่ 1",
+      "team1": {
+        "name": "สีเขียว",
+        "color": "#22C55E"
+      },
+      "team2": {
+        "name": "สีชมพู",
+        "color": "#EC4899"
+      },
+      "score1": null,
+      "score2": null,
+      "winner": null,
+      "status": "scheduled",
+      "statusOverride": null,
+      "referee": "ครูไพโรจน์",
+      "note": null
+    },
+    {
+      "id": "m047",
+      "type": "match",
+      "sport": "volleyball",
+      "date": "2026-07-14",
+      "time": "15:10",
+      "durationMin": 30,
+      "round": "คู่ 2",
+      "team1": {
+        "name": "สีแดง",
+        "color": "#EF4444"
+      },
+      "team2": {
+        "name": "สีน้ำเงิน",
+        "color": "#3B82F6"
+      },
+      "score1": null,
+      "score2": null,
+      "winner": null,
+      "status": "scheduled",
+      "statusOverride": null,
+      "referee": "ครูปรเมษฐ์",
+      "note": null
+    },
+    {
+      "id": "m048",
+      "type": "match",
+      "sport": "volleyball",
+      "date": "2026-07-15",
+      "time": "15:10",
+      "durationMin": 30,
+      "round": "คู่ 3",
+      "team1": {
+        "name": "สีชมพู",
+        "color": "#EC4899"
+      },
+      "team2": {
+        "name": "สีน้ำเงิน",
+        "color": "#3B82F6"
+      },
+      "score1": null,
+      "score2": null,
+      "winner": null,
+      "status": "scheduled",
+      "statusOverride": null,
+      "referee": "ครูสุวิทย์",
+      "note": null
+    },
+    {
+      "id": "m049",
+      "type": "match",
+      "sport": "volleyball",
+      "date": "2026-07-15",
+      "time": "15:10",
+      "durationMin": 30,
+      "round": "คู่ 1",
+      "team1": {
+        "name": "สีเขียว",
+        "color": "#22C55E"
+      },
+      "team2": {
+        "name": "สีแดง",
+        "color": "#EF4444"
+      },
+      "score1": null,
+      "score2": null,
+      "winner": null,
+      "status": "scheduled",
+      "statusOverride": null,
+      "referee": "ครูวิมล",
+      "note": null
+    },
+    {
+      "id": "m050",
+      "type": "match",
+      "sport": "volleyball",
+      "date": "2026-07-16",
+      "time": "15:10",
+      "durationMin": 30,
+      "round": "คู่ 2",
+      "team1": {
+        "name": "สีแดง",
+        "color": "#EF4444"
+      },
+      "team2": {
+        "name": "สีชมพู",
+        "color": "#EC4899"
+      },
+      "score1": null,
+      "score2": null,
+      "winner": null,
+      "status": "scheduled",
+      "statusOverride": null,
+      "referee": "ครูไพโรจน์",
+      "note": null
+    },
+    {
+      "id": "m051",
+      "type": "match",
+      "sport": "volleyball",
+      "date": "2026-07-16",
+      "time": "15:10",
+      "durationMin": 30,
+      "round": "คู่ 3",
+      "team1": {
+        "name": "สีเขียว",
+        "color": "#22C55E"
+      },
+      "team2": {
+        "name": "สีน้ำเงิน",
+        "color": "#3B82F6"
+      },
+      "score1": null,
+      "score2": null,
+      "winner": null,
+      "status": "scheduled",
+      "statusOverride": null,
+      "referee": "ครูปรเมษฐ์",
+      "note": null
+    },
+    {
+      "id": "m052",
+      "type": "match",
+      "sport": "badminton_m",
+      "date": "2026-07-06",
+      "time": "15:10",
+      "durationMin": 30,
+      "round": "คู่ 1",
+      "team1": {
+        "name": "สีเขียว",
+        "color": "#22C55E"
+      },
+      "team2": {
+        "name": "สีชมพู",
+        "color": "#EC4899"
+      },
+      "score1": null,
+      "score2": null,
+      "winner": null,
+      "status": "scheduled",
+      "statusOverride": null,
+      "referee": "ครูวิมล",
+      "note": null
+    },
+    {
+      "id": "m053",
+      "type": "match",
+      "sport": "badminton_m",
+      "date": "2026-07-06",
+      "time": "15:10",
+      "durationMin": 30,
+      "round": "คู่ 2",
+      "team1": {
+        "name": "สีแดง",
+        "color": "#EF4444"
+      },
+      "team2": {
+        "name": "สีน้ำเงิน",
+        "color": "#3B82F6"
+      },
+      "score1": null,
+      "score2": null,
+      "winner": null,
+      "status": "scheduled",
+      "statusOverride": null,
+      "referee": "ครูวิมล",
+      "note": null
+    },
+    {
+      "id": "m054",
+      "type": "match",
+      "sport": "badminton_m",
+      "date": "2026-07-07",
+      "time": "15:10",
+      "durationMin": 30,
+      "round": "คู่ 1",
+      "team1": {
+        "name": "สีชมพู",
+        "color": "#EC4899"
+      },
+      "team2": {
+        "name": "สีน้ำเงิน",
+        "color": "#3B82F6"
+      },
+      "score1": null,
+      "score2": null,
+      "winner": null,
+      "status": "scheduled",
+      "statusOverride": null,
+      "referee": "ครูวิมล",
+      "note": null
+    },
+    {
+      "id": "m055",
+      "type": "match",
+      "sport": "badminton_m",
+      "date": "2026-07-07",
+      "time": "15:10",
+      "durationMin": 30,
+      "round": "คู่ 2",
+      "team1": {
+        "name": "สีเขียว",
+        "color": "#22C55E"
+      },
+      "team2": {
+        "name": "สีแดง",
+        "color": "#EF4444"
+      },
+      "score1": null,
+      "score2": null,
+      "winner": null,
+      "status": "scheduled",
+      "statusOverride": null,
+      "referee": "ครูวิมล",
+      "note": null
+    },
+    {
+      "id": "m056",
+      "type": "match",
+      "sport": "badminton_m",
+      "date": "2026-07-08",
+      "time": "15:10",
+      "durationMin": 30,
+      "round": "คู่ 1",
+      "team1": {
+        "name": "สีแดง",
+        "color": "#EF4444"
+      },
+      "team2": {
+        "name": "สีชมพู",
+        "color": "#EC4899"
+      },
+      "score1": null,
+      "score2": null,
+      "winner": null,
+      "status": "scheduled",
+      "statusOverride": null,
+      "referee": "ครูวิมล",
+      "note": null
+    },
+    {
+      "id": "m057",
+      "type": "match",
+      "sport": "badminton_m",
+      "date": "2026-07-08",
+      "time": "15:10",
+      "durationMin": 30,
+      "round": "คู่ 2",
+      "team1": {
+        "name": "สีเขียว",
+        "color": "#22C55E"
+      },
+      "team2": {
+        "name": "สีน้ำเงิน",
+        "color": "#3B82F6"
+      },
+      "score1": null,
+      "score2": null,
+      "winner": null,
+      "status": "scheduled",
+      "statusOverride": null,
+      "referee": "ครูวิมล",
+      "note": null
+    },
+    {
+      "id": "m058",
+      "type": "match",
+      "sport": "badminton_w",
+      "date": "2026-07-06",
+      "time": "15:10",
+      "durationMin": 30,
+      "round": "คู่ 1",
+      "team1": {
+        "name": "สีเขียว",
+        "color": "#22C55E"
+      },
+      "team2": {
+        "name": "สีชมพู",
+        "color": "#EC4899"
+      },
+      "score1": null,
+      "score2": null,
+      "winner": null,
+      "status": "scheduled",
+      "statusOverride": null,
+      "referee": "ครูไพโรจน์",
+      "note": null
+    },
+    {
+      "id": "m059",
+      "type": "match",
+      "sport": "badminton_w",
+      "date": "2026-07-06",
+      "time": "15:10",
+      "durationMin": 30,
+      "round": "คู่ 2",
+      "team1": {
+        "name": "สีแดง",
+        "color": "#EF4444"
+      },
+      "team2": {
+        "name": "สีน้ำเงิน",
+        "color": "#3B82F6"
+      },
+      "score1": null,
+      "score2": null,
+      "winner": null,
+      "status": "scheduled",
+      "statusOverride": null,
+      "referee": "ครูไพโรจน์",
+      "note": null
+    },
+    {
+      "id": "m060",
+      "type": "match",
+      "sport": "badminton_w",
+      "date": "2026-07-07",
+      "time": "15:10",
+      "durationMin": 30,
+      "round": "คู่ 1",
+      "team1": {
+        "name": "สีชมพู",
+        "color": "#EC4899"
+      },
+      "team2": {
+        "name": "สีน้ำเงิน",
+        "color": "#3B82F6"
+      },
+      "score1": null,
+      "score2": null,
+      "winner": null,
+      "status": "scheduled",
+      "statusOverride": null,
+      "referee": "ครูไพโรจน์",
+      "note": null
+    },
+    {
+      "id": "m061",
+      "type": "match",
+      "sport": "badminton_w",
+      "date": "2026-07-07",
+      "time": "15:10",
+      "durationMin": 30,
+      "round": "คู่ 2",
+      "team1": {
+        "name": "สีเขียว",
+        "color": "#22C55E"
+      },
+      "team2": {
+        "name": "สีแดง",
+        "color": "#EF4444"
+      },
+      "score1": null,
+      "score2": null,
+      "winner": null,
+      "status": "scheduled",
+      "statusOverride": null,
+      "referee": "ครูไพโรจน์",
+      "note": null
+    },
+    {
+      "id": "m062",
+      "type": "match",
+      "sport": "badminton_w",
+      "date": "2026-07-08",
+      "time": "15:10",
+      "durationMin": 30,
+      "round": "คู่ 1",
+      "team1": {
+        "name": "สีแดง",
+        "color": "#EF4444"
+      },
+      "team2": {
+        "name": "สีชมพู",
+        "color": "#EC4899"
+      },
+      "score1": null,
+      "score2": null,
+      "winner": null,
+      "status": "scheduled",
+      "statusOverride": null,
+      "referee": "ครูไพโรจน์",
+      "note": null
+    },
+    {
+      "id": "m063",
+      "type": "match",
+      "sport": "badminton_w",
+      "date": "2026-07-08",
+      "time": "15:10",
+      "durationMin": 30,
+      "round": "คู่ 2",
+      "team1": {
+        "name": "สีเขียว",
+        "color": "#22C55E"
+      },
+      "team2": {
+        "name": "สีน้ำเงิน",
+        "color": "#3B82F6"
+      },
+      "score1": null,
+      "score2": null,
+      "winner": null,
+      "status": "scheduled",
+      "statusOverride": null,
+      "referee": "ครูไพโรจน์",
+      "note": null
+    },
+    {
+      "id": "m064",
+      "type": "event",
+      "sport": "opening",
+      "date": "2026-07-24",
+      "time": "08:00",
+      "durationMin": 45,
+      "title": "พิธีเปิด การแข่งขันกรีฑา และผู้นำเชียร์",
+      "status": "scheduled",
+      "statusOverride": null,
+      "referee": null,
+      "note": null
+    }
+  ]
+}

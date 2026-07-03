@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>อัปเดตผล — ศรีนครเกมส์ ครั้งที่ 30</title>
+<link rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" href="css/admin.css" />
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="brand">
+    <div class="brand-badge">ศ30</div>
+    <div class="brand-text">
+      <div class="name">แผงควบคุมผลการแข่งขัน</div>
+      <div class="sub">ศรีนครเกมส์ ครั้งที่ 30</div>
+    </div>
+  </div>
+  <a class="admin-link" href="index.html">← หน้าแสดงผล</a>
+</nav>
+
+<div class="shell">
+
+  <!-- LOGIN GATE -->
+  <div id="loginGate" class="login-card">
+    <p class="login-title">🔒 ใส่รหัสผู้ดูแลระบบ</p>
+    <p class="login-sub">สำหรับครูผู้ควบคุมการแข่งขันเท่านั้น</p>
+    <input id="pinInput" type="password" inputmode="numeric" placeholder="รหัส PIN" class="pin-input" />
+    <button id="loginBtn" class="pin-btn">เข้าสู่ระบบ</button>
+    <p id="loginError" class="login-error"></p>
+  </div>
+
+  <!-- ADMIN PANEL -->
+  <div id="adminPanel" style="display:none">
+
+    <div class="admin-toolbar">
+      <div class="filters" id="filters" style="padding:0"></div>
+      <div class="toolbar-actions">
+        <input id="searchInput" class="search-input" placeholder="ค้นหาทีม / กรรมการ..." />
+        <button id="statsBtn" class="ghost-btn">📊 สถิติผู้เข้าชม</button>
+        <button id="manageSportsBtn" class="ghost-btn">⚙ ชนิดกีฬา</button>
+        <button id="addMatchBtn" class="primary-btn">＋ เพิ่มรายการแข่งขัน</button>
+      </div>
+    </div>
+
+    <p id="saveToast" class="save-toast"></p>
+    <div id="dayList"></div>
+  </div>
+
+</div>
+
+<!-- MATCH / EVENT MODAL -->
+<div id="matchModalBackdrop" class="modal-backdrop" style="display:none">
+  <div class="modal">
+    <div class="modal-head">
+      <h3 id="modalTitle">เพิ่มรายการแข่งขัน</h3>
+      <button class="modal-close" id="modalCloseBtn">✕</button>
+    </div>
+
+    <div class="modal-body">
+      <div class="type-toggle" id="typeToggle">
+        <button class="type-btn active" data-type="match">🆚 การแข่งขัน (มีคู่แข่ง+คะแนน)</button>
+        <button class="type-btn" data-type="event">🎯 กิจกรรม (ไม่มีคู่แข่ง)</button>
+      </div>
+
+      <div class="form-grid">
+        <label class="field">
+          <span>ชนิดกีฬา / รายการ</span>
+          <select id="fSport"></select>
+        </label>
+        <label class="field">
+          <span>หมวด / รุ่น (เช่น ม.ต้น, ม.ปลาย, หญิง)</span>
+          <input id="fCategory" type="text" placeholder="เช่น ม.ปลาย" />
+        </label>
+
+        <label class="field">
+          <span>วันที่</span>
+          <input id="fDate" type="date" />
+        </label>
+        <label class="field">
+          <span>เวลา</span>
+          <input id="fTime" type="time" value="15:10" />
+        </label>
+
+        <label class="field">
+          <span>สถานที่</span>
+          <input id="fVenue" type="text" placeholder="เช่น สนามฟุตบอล" />
+        </label>
+        <label class="field">
+          <span>ชื่อผู้ควบคุม / กรรมการ</span>
+          <input id="fReferee" type="text" placeholder="เช่น ครูสมชาย" />
+        </label>
+
+        <label class="field">
+          <span>คู่ที่ / รอบ (ไม่บังคับ)</span>
+          <input id="fRound" type="text" placeholder="เช่น คู่ 3" />
+        </label>
+        <label class="field">
+          <span>หมายเหตุ (ไม่บังคับ)</span>
+          <input id="fNote" type="text" placeholder="รายละเอียดเพิ่มเติม" />
+        </label>
+      </div>
+
+      <div id="matchFields" class="form-grid">
+        <label class="field">
+          <span>ทีมที่ 1 (สี)</span>
+          <select id="fTeam1"></select>
+        </label>
+        <label class="field">
+          <span>ทีมที่ 2 (สี)</span>
+          <select id="fTeam2"></select>
+        </label>
+      </div>
+
+      <div id="eventFields" class="form-grid" style="display:none">
+        <label class="field field-wide">
+          <span>ชื่อกิจกรรม</span>
+          <input id="fTitle" type="text" placeholder="เช่น E-SPORT รอบชิงชนะเลิศ ม.ต้น" />
+        </label>
+      </div>
+    </div>
+
+    <p id="modalError" class="login-error" style="text-align:left"></p>
+
+    <div class="modal-foot">
+      <button id="deleteMatchBtn" class="danger-btn" style="display:none">🗑 ลบรายการนี้</button>
+      <div style="flex:1"></div>
+      <button id="cancelModalBtn" class="ghost-btn">ยกเลิก</button>
+      <button id="saveModalBtn" class="primary-btn">บันทึกรายการ</button>
+    </div>
+  </div>
+</div>
+
+<!-- SPORTS MANAGER MODAL -->
+<div id="sportsModalBackdrop" class="modal-backdrop" style="display:none">
+  <div class="modal">
+    <div class="modal-head">
+      <h3>จัดการชนิดกีฬา / ประกาศแชมป์</h3>
+      <button class="modal-close" id="sportsModalCloseBtn">✕</button>
+    </div>
+    <div class="modal-body">
+      <div id="sportsList"></div>
+
+      <div class="day-divider" style="margin-top:22px">＋ เพิ่มชนิดกีฬาใหม่</div>
+      <div class="form-grid">
+        <label class="field">
+          <span>ไอคอน (อีโมจิ)</span>
+          <input id="nsIcon" type="text" placeholder="🏸" maxlength="4" />
+        </label>
+        <label class="field">
+          <span>ชื่อชนิดกีฬา</span>
+          <input id="nsLabel" type="text" placeholder="เช่น E-SPORT ม.ต้น" />
+        </label>
+        <label class="field">
+          <span>สถานที่เริ่มต้น</span>
+          <input id="nsVenue" type="text" placeholder="เช่น หอประชุม" />
+        </label>
+        <label class="field">
+          <span>คะแนนแชมป์ (สำหรับตารางสรุป)</span>
+          <input id="nsPoints" type="number" value="5" min="0" />
+        </label>
+      </div>
+      <button id="addSportBtn" class="primary-btn" style="margin-top:10px">เพิ่มชนิดกีฬา</button>
+      <p id="sportsError" class="login-error" style="text-align:left"></p>
+    </div>
+    <div class="modal-foot">
+      <div style="flex:1"></div>
+      <button id="closeSportsBtn" class="ghost-btn">ปิด</button>
+    </div>
+  </div>
+</div>
+
+<!-- STATS MODAL -->
+<div id="statsModalBackdrop" class="modal-backdrop" style="display:none">
+  <div class="modal">
+    <div class="modal-head">
+      <h3>📊 สถิติผู้เข้าชมเว็บ</h3>
+      <button class="modal-close" id="statsModalCloseBtn">✕</button>
+    </div>
+    <div class="modal-body">
+      <div class="stats-summary" id="statsSummary"></div>
+      <div class="day-divider" style="margin-top:20px">14 วันล่าสุด</div>
+      <div id="statsHistory"></div>
+      <p class="unconfirmed-note" style="margin-top:14px">
+        นับจากเครื่อง/เบราว์เซอร์ที่ต่างกัน (ไม่ผูกกับบัญชีผู้ใช้) — เปิดหน้าเว็บ 1 ครั้ง
+        นับ 1 การเข้าชม และนับเป็นผู้เข้าชม "ไม่ซ้ำ" 1 คนต่อวันต่อเครื่อง
+      </p>
+    </div>
+    <div class="modal-foot">
+      <div style="flex:1"></div>
+      <button id="closeStatsBtn" class="ghost-btn">ปิด</button>
+    </div>
+  </div>
+</div>
+
+<script src="js/admin.js"></script>
+</body>
+</html>

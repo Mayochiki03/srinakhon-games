@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<title>ศรีนครเกมส์ ครั้งที่ 30 — ผลการแข่งขันสด</title>
+<meta name="description" content="ติดตามผลการแข่งขันกีฬาสีศรีนครเกมส์ ครั้งที่ 30 แบบสด" />
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2222%22 fill=%22%23FFC94A%22/><text x=%2250%22 y=%2266%22 font-size=%2256%22 text-anchor=%22middle%22 font-family=%22sans-serif%22 font-weight=%22800%22 fill=%22%231E0B36%22>ศ</text></svg>" />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="brand">
+    <div class="brand-badge">ศ30</div>
+    <div class="brand-text">
+      <div class="name">ศรีนครเกมส์ ครั้งที่ 30</div>
+      <div class="sub">โรงเรียนศรีนครมูลนิธิ</div>
+    </div>
+  </div>
+  <a class="admin-link" href="admin.html">⚙ อัปเดตผล</a>
+</nav>
+
+<div class="shell">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="floaties" aria-hidden="true">
+      <span style="left:6%; animation-duration:11s; animation-delay:0s">⚽</span>
+      <span style="left:18%; animation-duration:14s; animation-delay:2s">🏸</span>
+      <span style="left:32%; animation-duration:10s; animation-delay:4.5s">🏀</span>
+      <span style="left:48%; animation-duration:13s; animation-delay:1s">🏐</span>
+      <span style="left:64%; animation-duration:12s; animation-delay:5.5s">🥇</span>
+      <span style="left:78%; animation-duration:15s; animation-delay:3s">⚽</span>
+      <span style="left:90%; animation-duration:11.5s; animation-delay:6.5s">🏸</span>
+    </div>
+    <div class="hero-top">
+      <div>
+        <p class="hero-eyebrow">วันนี้</p>
+        <h1 class="hero-date" id="heroDate">—</h1>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <div class="num" id="statLive">0</div>
+          <div class="lbl">กำลังแข่งขัน</div>
+        </div>
+        <div class="hero-stat">
+          <div class="num" id="statToday">0</div>
+          <div class="lbl">รายการวันนี้</div>
+        </div>
+        <div class="hero-stat">
+          <div class="num" id="statTotal">0</div>
+          <div class="lbl">รายการทั้งหมด</div>
+        </div>
+        <div class="hero-stat">
+          <div class="num" id="statVisitors">0</div>
+          <div class="lbl">ผู้เข้าชมวันนี้</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="ticker is-empty" id="ticker">
+      <div class="ticker-tag"><span class="pulse-dot"></span><span id="tickerTag">อัปเดตล่าสุด</span></div>
+      <div class="ticker-track-wrap">
+        <div class="ticker-track" id="tickerTrack">กำลังโหลดข้อมูลการแข่งขัน...</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FILTERS -->
+  <div class="filters" id="filters"></div>
+
+  <!-- LIVE -->
+  <section class="section" id="sectionLive" style="display:none">
+    <div class="section-head">
+      <h2 class="section-title"><span class="dot dot-live"></span>กำลังแข่งขันสด</h2>
+      <span class="section-count" id="countLive"></span>
+    </div>
+    <div class="card-grid" id="gridLive"></div>
+  </section>
+
+  <!-- NEXT UP -->
+  <section class="section" id="sectionNext">
+    <div class="section-head">
+      <h2 class="section-title"><span class="dot dot-next"></span>กำลังจะเริ่มเร็วๆ นี้</h2>
+      <span class="section-count" id="countNext"></span>
+    </div>
+    <div class="card-grid" id="gridNext"></div>
+  </section>
+
+  <!-- TODAY RESULTS -->
+  <section class="section" id="sectionToday" style="display:none">
+    <div class="section-head">
+      <h2 class="section-title"><span class="dot dot-done"></span>ผลการแข่งขันวันนี้</h2>
+      <span class="section-count" id="countToday"></span>
+    </div>
+    <div class="card-grid" id="gridToday"></div>
+  </section>
+
+  <!-- STANDINGS -->
+  <section class="section">
+    <div class="section-head">
+      <h2 class="section-title">🏆 คะแนนสะสมประจำสี</h2>
+      <span class="section-count">ชนะ 3 · เสมอ 1 · แพ้ 0</span>
+    </div>
+    <div class="standings" id="standings"></div>
+  </section>
+
+  <!-- CHAMPIONS BY SPORT (manually declared) -->
+  <section class="section" id="sectionChampions" style="display:none">
+    <div class="section-head">
+      <h2 class="section-title">🥇 แชมป์ประจำชนิดกีฬา</h2>
+      <span class="section-count">ประกาศโดยครูผู้ควบคุม</span>
+    </div>
+    <div class="champions-wrap" id="championsList"></div>
+    <div class="champion-totals-wrap" id="championTotals"></div>
+  </section>
+
+  <!-- FULL SCHEDULE -->
+  <section class="section">
+    <div class="section-head">
+      <h2 class="section-title">📅 ตารางการแข่งขันทั้งหมด</h2>
+      <span class="section-count" id="countAll"></span>
+    </div>
+    <div id="dayList"></div>
+  </section>
+
+  <footer class="footer">
+    ศรีนครเกมส์ ครั้งที่ 30 · โรงเรียนศรีนครมูลนิธิ · อัปเดตอัตโนมัติทุก 20 วินาที
+  </footer>
+</div>
+
+<div id="confettiLayer" aria-hidden="true"></div>
+<script src="js/app.js"></script>
+</body>
+</html>
